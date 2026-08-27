@@ -1,4 +1,4 @@
-module github.com/lasiar/canonicalheader
+module github.com/golangci/canonicalheader
 
 go 1.25.0
 

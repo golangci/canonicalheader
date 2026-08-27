@@ -10,7 +10,7 @@ import (
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/analysistest"
 
-	"github.com/lasiar/canonicalheader"
+	"github.com/golangci/canonicalheader"
 )
 
 const testValue = "hello_world"

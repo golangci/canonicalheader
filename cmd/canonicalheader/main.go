@@ -3,7 +3,7 @@ package main
 import (
 	"golang.org/x/tools/go/analysis/singlechecker"
 
-	"github.com/lasiar/canonicalheader"
+	"github.com/golangci/canonicalheader"
 )
 
 func main() {
