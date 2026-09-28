@@ -1,5 +1,13 @@
 name: spell checking
-on: [pull_request]
+on:
+  push:
+    branches:
+      - main
+      - 'fork-2026-08'
+  pull_request:
+    branches:
+      - main
+      - 'fork-2026-08'
 
 jobs:
   typos:

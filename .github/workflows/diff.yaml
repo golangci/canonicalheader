@@ -3,12 +3,12 @@ name: check diff
 on:
   push:
     branches:
-      - 'main'
-      - 'v*'
+      - main
+      - 'fork-2026-08'
   pull_request:
     branches:
-      - 'main'
-      - 'v*'
+      - main
+      - 'fork-2026-08'
 
 jobs:
   check_diff:

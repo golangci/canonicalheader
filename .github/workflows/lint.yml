@@ -3,8 +3,11 @@ on:
   push:
     branches:
       - main
-      - master
+      - 'fork-2026-08'
   pull_request:
+    branches:
+      - main
+      - 'fork-2026-08'
 
 permissions:
   contents: read

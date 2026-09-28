@@ -3,14 +3,12 @@ name: test
 on:
   push:
     branches:
-      - 'main'
-      - 'v*'
+      - main
+      - 'fork-2026-08'
   pull_request:
     branches:
-      - 'main'
-      - 'v*'
-  schedule:
-    - cron: '0 8 * * 1' # run "At 08:00 on Monday"ma
+      - main
+      - 'fork-2026-08'
 
 jobs:
   build:
