@@ -79,13 +79,8 @@ func (c *canonicalHeader) run(pass *analysis.Pass) (any, error) {
 	nodeFilter := []ast.Node{
 		(*ast.CallExpr)(nil),
 	}
-	var outerErr error
 
 	spctor.Preorder(nodeFilter, func(n ast.Node) {
-		if outerErr != nil {
-			return
-		}
-
 		callExp, ok := n.(*ast.CallExpr)
 		if !ok {
 			return
@@ -270,7 +265,8 @@ func (c *canonicalHeader) run(pass *analysis.Pass) (any, error) {
 		pass.Report(arg.diagnostic(headerKeyCanonical))
 	})
 
-	return nil, outerErr
+	//nolint:nilnil // This is expected by the signature of the callback.
+	return nil, nil
 }
 
 func canonicalHeaderKey(s string, m map[string]string) string {
